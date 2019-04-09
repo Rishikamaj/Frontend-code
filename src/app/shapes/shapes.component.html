@@ -1,0 +1,55 @@
+<p>
+  Different Types of Shapes!
+</p>
+<!-- <div class = "Shapes">
+  <button class = "Shapes">Shapes</button>  -->
+<!-- <select >
+    <option value="square">Square</option>
+    
+    <option value="circle">Circle</option> -->
+    <!-- <li>
+      <img [ngClass]="{'this-is-a-class': id === 1 }" id="1"  
+           src="assets/img/2062652.jpg/" (click)="funcShapes()"/>
+  </li> -->
+
+  
+    <!-- <option value ="/assets/img/2062652.jpg">Circle</option >
+     -->
+    <!-- <option value="rectangle">Rectangle</option>
+    <option value="triangle">Triangle</option>
+  </select>  -->
+<!-- </div> -->
+
+  <!-- <input type = "button" value="Login" name ="Login" (click)="funcLogin()"> -->
+  <!-- <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="/assets/img/2062652.jpg">Circle</a><br>
+        <a href="#">Rectangle</a><br>
+        <a href="#">Triangle</a>
+      </div>
+    </div>  -->
+
+    <!-- <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="/assets/img/2062652.jpg">Circle</a><br>
+          <a href="/assets/img/134130.png">Square</a><br>
+          <a href="#">Triangle</a>
+        </div>
+      </div> -->
+
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a (click)="showImage('circle')">Circle</a>
+          <a (click)="showImage1('square')">Square</a>
+          <!-- <a (click)="showImage2('triangle'">Triangle</a> -->
+        </div>
+      </div> 
+      <div *ngIf="imageurl!=undefined">
+        <img src={{imageurl}}>
+      </div>
+      <!-- <div *ngIf="imageurl!=undefined">
+        <img src={{imageurl}}>
+      </div> -->
